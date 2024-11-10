@@ -1,0 +1,341 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    scroll-behavior: smooth;
+}
+
+header
+{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    padding: 10px 20px;
+    background: rgb(255,250,245);
+    position: fixed;
+    border-bottom: 1px solid #aaa;
+}
+
+header .logo
+{
+    color: rgb(48,47,81);
+    font-weight: bold;
+    font-size: 2.5em;
+    text-decoration: none;
+}
+
+header ul
+{
+    display: flex;
+    
+    gap: 60px;
+    list-style: none;
+}
+header .navigation li a
+{
+    text-decoration: none;
+    color: rgb(48,47,81);
+   
+}
+
+header .navigation li a:hover{
+    color: rgb(153, 150, 252);
+}
+
+.banner
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    position: relative;
+    background: rgb(255,250,245);
+    background: linear-gradient(rgba(0,0,0,0.40),rgba(0,0,0,0.40)),url(https://i.postimg.cc/Pr1sw3SW/wp11428610-dogs-and-cats-spring-wallpapers.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 100px;
+    margin: 0px 80px;
+}
+
+.title
+{
+   font-size: 50px;
+  color: #fff;
+}
+
+
+.btn
+{
+    padding: 20px 30px;
+    color: #fff;
+    text-decoration: none;
+    background: rgb(48,47,81);  
+    margin-top: 30px;
+    font-weight: 300;
+    transition: .5s;
+}
+
+
+.shop .content
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.shop .content .box
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    gap: 10px;
+}
+
+
+.shop .sall{
+    text-decoration: none;
+    border: 2px solid rgb(48, 47, 47);
+    padding: 5px 30px;
+    left: 50%;
+    position: absolute;
+}
+
+
+.sall:hover{
+    background-color: gray;
+    color: #fff;
+}
+
+
+
+.about .line{   
+    width: 100px;
+    border-top: 1px solid black;
+}
+
+
+
+.about
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+.about .title h2
+{
+    margin-bottom: 50px;
+}
+
+
+
+.imgtext
+{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    /* flex-wrap: wrap; */
+}
+
+.imgtext img
+{
+    height: 110vh;
+    background-size: cover;
+    width: 100%;
+}
+
+
+.imgtext .info
+{
+    position: absolute;
+
+    background: rgb(235, 194, 108);
+    height: 60%;
+    opacity: .90;
+    left: 100px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+    padding: 110px;
+    color: rgb(48,47,81);
+}
+
+.imgtext .info .infocontent 
+{
+    padding: 10px 0;
+    border-bottom: 1px solid rgb(48,47,81);
+}
+.imgtext .info .infocontent h3
+{
+    font-size: 2em;
+}
+.imgtext .info .infocontent p
+{
+    font-style: italic;
+    padding: 10px 0;
+}
+
+.container
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.container img
+{
+    width: 300px;
+    height: 300px;
+}
+
+
+.container .bbox
+{
+    width: 300px;
+    height: 300px;
+}
+
+
+.container .cbox2
+{
+    background: #857C48;
+    color: #fff;
+    position: relative;
+}
+
+
+.container .cbox2 h1
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container .cbox4
+{
+    background: #487b85;
+    color: #fff;
+    position: relative;
+}
+
+.container .boxdetail 
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container .cbox5
+{
+    background: #854885;
+    color: #fff;
+    position: relative;
+}
+
+
+.container .cbox7
+{
+    background: #854a48;
+    color: #fff;
+    position: relative;
+}
+
+
+.contact
+{
+    margin: 0 80px;
+    border-top: 1px solid rgb(48,47,81);
+    border-bottom: 1px solid rgb(48,47,81);
+}
+
+
+.contact .footer
+{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer .links .navigation
+{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 20px;
+    list-style: none;
+}
+
+.footer .links .navigation li a
+{
+    text-decoration: none;
+    color: rgb(48,47,81);
+    transition: .5s;
+    font-weight: bold;
+    font-size: 1.3em;
+}
+footer .links .navigation li a:hover{
+    color: rgb(153, 150, 252);
+}
+.footer .info
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    width: 200px;
+    font-size: 1.1em;
+}
+.footer .info h1
+{
+    color: rgb(48,47,81); 
+    text-align: center;
+}
+.footer .cs
+{
+    display: flex;
+    flex-direction: column;
+    color: rgb(48,47,81);
+}
+.footer .cs ul
+{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 10px;  
+    list-style: none;
+}
+.footer .cs li
+{
+    text-decoration: none;
+    color: rgb(48,47,81);
+    transition: .5s;
+    font-size: 1.1em;
+}
+.footer .slinks
+{
+    display: flex;
+    flex-direction: column;
+    color: rgb(48,47,81);
+}
+.footer .slinks .link
+{
+    margin-top: 10px;
+}
